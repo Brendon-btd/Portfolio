@@ -54,11 +54,12 @@ function Skills() {
 
                   <div className="group">
                     <p className='text-white font-semibold text-2xl'>
-                      <BrainCircuit  className='w-12 h-12 text-blue-400 '/> Digital
+                      <MonitorSmartphone  className='w-12 h-12 text-blue-400 '/> Digital
                     </p>
                     <p className='text-gray-300'>SEO Optimization</p>
                     <p className='text-gray-300'>Web Design</p>
-                    <p className='text-gray-300'>Automation & AI</p> 
+                    <p className='text-gray-300'>Automation & AI</p>
+                    <p className='text-gray-300'>Video Editing</p> 
                   </div>
                    
                 </div>
