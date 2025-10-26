@@ -7,7 +7,7 @@ import { MonitorSmartphone } from 'lucide-react';
 
 function Skills() {
   return (
-    <section id='home' className='min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 to-slate-900 pt-20 relative overflow-hidden'>
+    <section id='skills' className='min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 to-slate-900 pt-20 relative overflow-hidden'>
         {/* background design */}
        <div className="absolute inset-0">
             <div className="absolute top-20 left-10 w-72 h-72 bg-green-600/10 rounded-full blur-3xl"></div>

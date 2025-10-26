@@ -126,9 +126,9 @@ function Projects() {
             </div>
 
             <div className={`text-center transition-all duration-1000 delay-1000 mt-5`}>
-             <button className='px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 font-medium shadow-lg hover:shadow-lg hover:scale-105'>
+             <a href='https://github.com/Brendon-btd?tab=repositories' className='px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 font-medium shadow-lg hover:shadow-lg hover:scale-105'>
                 View All My Projects
-             </button>
+             </a>
             </div>
         </div>
     </section>

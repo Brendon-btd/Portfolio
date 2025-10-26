@@ -5,7 +5,7 @@ import { Linkedin } from "lucide-react";
 function Contact() {
   return (
     <section
-      id="projects"
+      id="contact"
      className="bg-linear-to-br from-slate-900 to-slate-900 pt-32 pb-30 relative overflow-hidden"
     >
       {/* background design */}
