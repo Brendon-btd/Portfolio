@@ -2,6 +2,7 @@ import React from 'react'
 import { ExternalLink, Github } from 'lucide-react';
 
 function Projects() {
+    // My Projects
     const projects = [
         {
             id: 1,
@@ -11,15 +12,19 @@ function Projects() {
             technologies:["HTML", "CSS"],
             category: "Front End",
             featured: true,
+            githubLink: "https://github.com/Brendon-btd/Menu",
+            liveLink: "https://silly-hummingbird-24fb2d.netlify.app/"
         },
         {
             id: 2,
             title: "Digital Clock",
             description: "A simple yet dynamic digital clock that displays real-time hours, minutes, and seconds using JavaScript. This project strengthened my understanding of DOM manipulation, real-time updates, and clean UI presentation.",
             image: "https://images.unsplash.com/photo-1580574252456-5279e8470478?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-            technologies:["HTML", "CSS"],
+            technologies:["HTML", "CSS", "JavaScript"],
             category: "Front End",
             featured: true,
+            githubLink: "https://github.com/Brendon-btd/Digital-Clock",
+            liveLink: "https://digital-clock-brendon.netlify.app/"
         },
         {
             id: 3,
@@ -29,33 +34,41 @@ function Projects() {
             technologies:["HTML", "CSS"],
             category: "Front End",
             featured: true,
+            githubLink: "https://github.com/Brendon-btd/Team-Portfolio-Website-group-1",
+            liveLink: "https://group-1-portfolio.netlify.app/"
         },
         {
             id: 4,
             title: "ToDo List",
             description: "An interactive to-do list app that allows users to add, delete, and manage daily tasks efficiently. Built with JavaScript, this project helped me explore CRUD functionality, local storage, and basic app logic for productivity tools.",
             image: "https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-            technologies:["HTML", "CSS"],
+            technologies:["HTML", "CSS", "JavaScript"],
             category: "Front End",
             featured: true,
+            githubLink: "https://github.com/Brendon-btd/ToDo-List",
+            liveLink: "https://brendon-btd.github.io/ToDo-List/"
         },
         {
             id: 5,
             title: "Currency Converter",
             description: "A functional currency converter that calculates real-time exchange values using JavaScript. This project deepened my understanding of API integration, user input handling, and presenting live data in a clean, accessible format.",
             image: "https://images.unsplash.com/photo-1583426965846-a3429b314b6c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-            technologies:["HTML", "CSS"],
+            technologies:["HTML", "CSS", "JavaScript"],
             category: "Front End",
             featured: true,
+            githubLink: "https://github.com/Brendon-btd/currency-converter",
+            liveLink: "https://brendon-btd.github.io/currency-converter/"
         },
         {
             id: 6,
             title: "Hotel Page Remodel",
             description: "A redesigned hotel website that focuses on visual appeal, responsive design, and user-friendly navigation. The goal was to create a more modern, engaging interface that improves user experience and showcases design improvement skills.",
             image: "https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-            technologies:["HTML", "CSS"],
+            technologies:["HTML", "Bootstrap"],
             category: "Front End",
             featured: true,
+            githubLink: "https://github.com/Brendon-btd/Hotel-Webpage-Remodel",
+            liveLink: "https://lucky-faun-1392a9.netlify.app/"
         },
     ]
 
@@ -87,12 +100,12 @@ function Projects() {
                         <div className='relative overflow-hidden'>
                             <img src={project.image} alt={project.title} className='w-full h-70 object-cover group-hover:scale-105 transition-all duration-300'/>
                             <div className='absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300'>
-                                <button className='w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-all duration-300'>
+                                <a href={project.githubLink} target='_blank' rel='noopener noreferrer' className='w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-all duration-300'>
                                     <Github className='w-4 h-4 text-gray-700' />
-                                </button>
-                                <button className='w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-all duration-300'>
+                                </a>
+                                <a href={project.liveLink} target='_blank' rel='noopener noreferrer' className='w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-all duration-300'>
                                     <ExternalLink  className='w-4 h-4 text-gray-700' />
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div className='p-6'>
