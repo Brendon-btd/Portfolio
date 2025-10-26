@@ -19,7 +19,7 @@ const Hero = () => {
                 <div className='space-y-8'>
                     <div className="space-y-4">
                         <p className={'text-green-400 font-semibold text-lg transition-all duration-1000'}>
-                            Get Read To Start Work
+                            Get To Know Me
                         </p>
                         <h1 className={'text-5xl md:text-7xl font-black text-white leading-tight transition-all duration-1000 delay-200'}>
                             I'm a
